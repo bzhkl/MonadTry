@@ -1,0 +1,3 @@
+module Add where
+
+myAdd = (+)
