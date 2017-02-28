@@ -2,7 +2,7 @@ module Main where
 import Hi
 import Add
 import MyIO
-
+import Parser
 
 main :: IO ()
 main = do

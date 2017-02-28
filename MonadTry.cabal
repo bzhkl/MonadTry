@@ -18,9 +18,13 @@ library
   hs-source-dirs:      libHello
                       ,libAdd
                       ,libMyIO
+                      ,libList
+                      ,libParser
   exposed-modules:     Hi
                       ,Add
                       ,MyIO
+                      ,List
+                      ,Parser
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
 

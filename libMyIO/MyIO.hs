@@ -4,6 +4,15 @@ import Control.Monad
 import Control.Applicative
 import Data.Char
 
+
+instance Functor MyIO where
+  fmap = liftM
+
+instance Applicative MyIO where
+  pure = return
+  (<*>) = ap
+
+
 type Input      = String
 type Remainder  = String
 type Output     = String
@@ -47,12 +56,6 @@ myEcho = myGetLine >>= \line ->
 
 
 
-instance Functor MyIO where
-  fmap = liftM
-
-instance Applicative MyIO where
-  pure = return
-  (<*>) = ap
 
 instance Monad MyIO where
   return x = MyIO $ \s -> (x, s, "")
