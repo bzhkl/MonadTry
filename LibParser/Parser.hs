@@ -94,7 +94,7 @@ match = mapM token
 
 -- Parser.apply (matchEx2 "aa") "aa123"
 
-test :: Parser [a]
+test :: Parser [String]
 test =
   return []
 
@@ -124,8 +124,8 @@ plusEx a = do
 
 
 
-
-
+--Parser.apply (star $ token 'a' `mplus` token 'b') "a1234"
+--39 minite
 
 
 
