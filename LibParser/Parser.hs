@@ -4,7 +4,6 @@ import Control.Applicative
 import Control.Monad
 import Data.Char
 
-
 newtype Parser a = Parser (String -> [(a, String)])
 
 
@@ -65,6 +64,11 @@ spot f = char >>= \c -> guard (f c) >>= \_->return c
 
 
 
+parseDigit :: Parser Char
+parseDigit = spot isDigit
+
+
+
 token:: Char -> Parser Char
 token c = spot (==c)
 
@@ -106,9 +110,9 @@ star p = plusEx p `mplus` return []
 -- Parser.apply (star $ spot isDigit) "123"
 
 
---plus :: Parser a -> Parser[a]
---plus p =
---  p >>= \x -> star p >>= \xs -> return $ x : xs
+plus :: Parser a -> Parser[a]
+plus p =
+  p >>= \x -> star p >>= \xs -> return $ x : xs
 
 -- Parser.apply (plus $ spot isDigit) "123"
 -- parse (plus $ spot isDigit) "123"
@@ -125,9 +129,24 @@ plusEx a = do
 
 
 --Parser.apply (star $ token 'a' `mplus` token 'b') "a1234"
---39 minite
 
 
+parseNat :: Parser Int
+parseNat = plus parseDigit >>= \s-> return $ read s
+
+--Parser.apply parseNat "1234"
+
+
+parseNeg :: Parser Int
+parseNeg = token '-' >> parseNat >>= \n -> return $ -n
+
+--Parser.apply parseNat "1234"
+
+
+parseInt :: Parser Int
+parseInt = parseNat `mplus`  parseNeg
+--Parser.apply parseInt "-1234"
+--Parser.apply parseInt "1234"
 
 
 
