@@ -8,7 +8,7 @@ import MyIO
 import Parser
 import Control.Monad
 import System.Random
-
+import Control.Exception.Base
 
 type Size    = Int
 
@@ -27,7 +27,6 @@ main = do
 scale :: Size -> (Int, Int)
 scale s = let n = toInteger (31 * s `div` 100) in
             (fromInteger (-2^n), fromInteger (2^n - 1))
-
 
 
 m = snd (head l)
@@ -51,11 +50,16 @@ continue = do
   a <- prog
   a
 
+echoNonFRP = eventLoop $ putStrLn . ("You typed: "++)
 
 
 
-
-
+eventLoop fire = loop
+   where
+   loop = do
+      s <- getLine
+      fire s
+      when (s /= "quit") loop
 
 
 

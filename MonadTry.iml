@@ -7,11 +7,41 @@
       <sourceFolder url="file://$MODULE_DIR$/libHello" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libAdd" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libMyIO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/base-4.9.1.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/bytestring-0.10.8.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/containers-0.5.7.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/deepseq-1.4.2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/ghc-prim-0.5.0.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/integer-gmp-1.0.0.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/mtl-2.2.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/random-1.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/time-1.6.0.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/transformers-0.5.2.0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/Win32-2.3.1.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.ideaHaskellLib/array-0.5.1.1" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.ideaHaskellLib" />
       <excludeFolder url="file://$MODULE_DIR$/.stack-work" />
     </content>
     <orderEntry type="jdk" jdkName="Haskell Tool Stack" jdkType="Haskell Tool Stack SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Win32">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/Win32-2.3.1.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="array">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/array-0.5.1.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="module-library">
       <library name="base">
         <CLASSES />
@@ -22,11 +52,83 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bytestring">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/bytestring-0.10.8.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="containers">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/containers-0.5.7.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="deepseq">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/deepseq-1.4.2.0" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="ghc-prim">
         <CLASSES />
         <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/.ideaHaskellLib/ghc-prim-0.5.0.0" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="integer-gmp">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/integer-gmp-1.0.0.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mtl">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/mtl-2.2.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="random">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/random-1.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="time">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/time-1.6.0.1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="transformers">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.ideaHaskellLib/transformers-0.5.2.0" />
         </SOURCES>
       </library>
     </orderEntry>
